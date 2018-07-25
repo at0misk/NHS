@@ -15,8 +15,8 @@
          // get expenses
          function get_expenses_by_category($cat)
          {
-            $query = "SELECT * FROM expenses WHERE category like ?";
-            $values = array($cat);
+            $query = "SELECT * FROM expenses WHERE category like ? AND user_id = ?";
+            $values = array($cat, $this->session->id);
             return $this->db->query($query, $values)->result_array();
          }
     }
