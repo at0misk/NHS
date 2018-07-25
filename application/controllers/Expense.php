@@ -36,7 +36,7 @@ class Expense extends CI_Controller {
 		$query['expenses'] = $this->Expense_model->get_expenses_by_user($this->session->id);
 		$this->load->view('expenses', $query);
 	}
-	public function new(){
+	public function new_expense(){
 		$this->check_session();
 		$this->load->view('expenses_new');
 	}
