@@ -2,7 +2,7 @@
     class User_model extends CI_Model {
          function register($data)
          {
-            $query = "INSERT INTO Users (first, last, email, password, created_at, updated_at) VALUES (?,?,?,?, NOW(), NOW())";
+            $query = "INSERT INTO users (first, last, email, password, created_at, updated_at) VALUES (?,?,?,?, NOW(), NOW())";
             $values = array($data['first'], $data['last'], $data['email'], $data['password']);
             $this->db->query($query, $values);
             $user_info = array(
