@@ -23,6 +23,6 @@ class User extends CI_Controller {
 		$this->load->model("User_model");
 		$new_user = $this->User_model->register($this->input->post());
 		$this->session->set_userdata($this->User_model->get_user_by_email($new_user['email']));
-		redirect("/");
+		redirect("/expenses");
 	}
 }
