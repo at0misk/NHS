@@ -1,4 +1,5 @@
 <IfModule mod_rewrite.c>
+    Options All -Indexes
     RewriteEngine On
     RewriteBase /
     #Removes access to the system folder by users.
