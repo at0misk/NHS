@@ -48,7 +48,7 @@
 				<input class="form-control" type="text" name="last" placeholder="Last Name" required>
 				<input class="form-control" type="text" name="email" placeholder="Email" required>
 				<input class="form-control" type="password" name="password" placeholder="Password" required>
-				<input class="form-control btn-primary" type="submit" value="Login">
+				<input class="form-control btn-primary" type="submit" value="Register">
 			</form>
 		</div>
 	</div>
